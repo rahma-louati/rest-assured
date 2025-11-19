@@ -1,21 +1,52 @@
-h1. REST Assured API Automation Project
+# REST Assured API Automation Project
 
-[!https://img.shields.io/badge/Java-21-lightgrey?style=flat!]
-[!https://img.shields.io/badge/Maven-3.9.0-lightgrey?style=flat!]
-[!https://img.shields.io/badge/JUnit-5.10.0-lightgrey?style=flat!]
-[!https://img.shields.io/badge/REST_Assured-4.6.1-lightgrey?style=flat!]
-[!https://img.shields.io/badge/IntelliJ-IDEA-lightgrey?style=flat!]
+![Java](https://img.shields.io/badge/Java-21-blue)
+![Maven](https://img.shields.io/badge/Maven-3.9.0-green)
+![JUnit5](https://img.shields.io/badge/JUnit-5.10.0-red)
+![REST Assured](https://img.shields.io/badge/REST_Assured-4.6.1-orange)
+![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ-IDEA-purple)
 
-h2. Objectif du projet
+---
+## Description
 
-Ce projet a pour but de :  
-* Pratiquer l’automatisation des API REST  
-* Structurer un framework minimaliste et maintenable  
-* Utiliser Rest Assured de manière professionnelle  
-* Appliquer le style BDD Fluent  
-* Préparer l’intégration future dans CI/CD (GitHub Actions, Jenkins)  
+Ce projet est un **framework d'automatisation pour les tests d'API REST** utilisant Rest Assured. Il permet de :
+- envoyer des requêtes HTTP : GET, POST, PUT, DELETE
+- valider les réponses et assertion JSON
+- gérer les headers, pathParams et bodies Json
+- Extraire facilemnt des données de réponse
+- Intéger les test dans une pipeline CI/CD
 
-h2. Installation
+🔹Qu'est ce que Rest Assured ? 
+Rest Assured est une bibliothéque Java open-source pour automatiser les tests d'API REST.
+
+Elle permet de :
+- Créer et envoyer rapidement des requêtes HTTP
+- Vérifier les réponses avec des assertions Hamcrest
+- Appliquer le style BDD : given() / when() / then()
+- Gérer facilement headers, pathParams, queryParams et bodies JSON
+- S’intégrer avec JUnit, TestNG et Maven CI/CD
+
+💡 Pourquoi l’utiliser ?
+
+Pour écrire des tests lisibles, maintenables et robustes, avec un minimum de complexité.
+
+---
+
+# 🧰 **Technologies Utilisées**
+
+| Technologie           | Rôle | 
+|-----------------------|------|
+| **Java 17**           | Langage principal |
+| **Maven**             | Gestion des dépendances / Build | 
+| **Rest Assured 5.x**  | Test API REST |
+| **TestNG**            | Framework de tests |
+| **Hamcrest Matchers** | Assertions avancées |
+| **JSONPath**          | Extraction de données JSON |
+| **IntelliJ IDEA**     | IDE recommandé |
+
+---
+
+##📥 Installation
 
 1. Clonez le projet :  
 <pre>
@@ -26,8 +57,8 @@ git clone https://github.com/votre-utilisateur/restassured-api-automation.git
 <pre>
 mvn clean install
 </pre>
-
-h2. Exécution des tests
+---
+##▶️ Exécution des tests
 
 h3. Depuis Maven
 <pre>
@@ -37,8 +68,9 @@ mvn test
 h3. Depuis IntelliJ IDEA
 1. Ouvrez le fichier AutomateGet.java ou AutomateDelete.java  
 2. Clic droit → Run Test
+---
 
-h2. Configuration commune
+##🔧 Configuration Commune
 
 <pre>
 RequestSpecBuilder requestSpecBuilder = new RequestSpecBuilder()
@@ -54,10 +86,11 @@ ResponseSpecBuilder responseSpecBuilder = new ResponseSpecBuilder()
     .expectContentType(ContentType.JSON)
     .log(LogDetail.ALL);
 </pre>
+-----
 
-h2. Exemples de tests
+##🧪 Exemples de tests
 
-h3. Test GET – Liste des workspaces
+✅Test GET – Liste des workspaces
 <pre>
 @Test
 public void validate_get_status_code() {
@@ -73,7 +106,7 @@ public void validate_get_status_code() {
 }
 </pre>
 
-h3. Test DELETE – Suppression d’un workspace
+✅ Test DELETE – Suppression d’un workspace
 <pre>
 @Test
 public void validate_delete_request_bdd_style() {
@@ -89,7 +122,7 @@ public void validate_delete_request_bdd_style() {
 }
 </pre>
 
-h3. Extraction de données JSON
+✅ Extraction de données JSON
 <pre>
 String response = given()
     .baseUri("https://api.postman.com")
@@ -103,8 +136,9 @@ String response = given()
 
 System.out.println("Workspace Name = " + JsonPath.from(response).getString("workspaces[0].name"));
 </pre>
+---
 
-h2. Rapports
+## 📊 Rapports
 
 Les tests JUnit ou TestNG génèrent automatiquement des rapports HTML :  
 <pre>
@@ -115,9 +149,10 @@ Ces rapports contiennent :
 * Statut des tests  
 * Temps d’exécution  
 * StackTrace en cas d’échec  
-* Logs détaillés Rest Assured  
-
-h2. Contribution
+* Logs détaillés Rest Assured
+  
+---
+##🤝 Contribution
 
 1. Forkez le repository  
 2. Créez votre branche :  
@@ -132,22 +167,13 @@ git commit -m "Ajout d’un nouveau test API"
 <pre>
 git push origin feature/nouvelle-feature
 </pre>
-5. Ouvrez une Pull Request  
+5. Ouvrez une Pull Request
 
-h2. Technologies utilisées
+   
+ ------
 
-[!https://img.shields.io/badge/Java-21-lightgrey?style=flat!]
-[!https://img.shields.io/badge/Maven-3.9.0-lightgrey?style=flat!]
-[!https://img.shields.io/badge/JUnit-5.10.0-lightgrey?style=flat!]
-[!https://img.shields.io/badge/REST_Assured-4.6.1-lightgrey?style=flat!]
-[!https://img.shields.io/badge/IntelliJ-IDEA-lightgrey?style=flat!]
-
-* Java 21 : langage principal  
-* Maven 3.9.0 : gestion des dépendances et build  
-* JUnit 5 : framework de test  
-* REST Assured : automatisation des tests d'API  
-* JSON : format des requêtes et réponses  
-* IntelliJ IDEA : IDE pour le développement et tests
+##👩‍💻 Auteur
+Rahma Louati |Software QA Engineer – Test manuel & automatisé|
 
 
 
