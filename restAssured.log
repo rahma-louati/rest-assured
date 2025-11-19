@@ -1,0 +1,40 @@
+Request method:	GET
+Request URI:	https://postman-echo.com/get
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 14 Nov 2025 22:08:08 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+etag: W/"d5-k5hPpiXPTzGhBrWSFgCQbAWF+DI"
+vary: Accept-Encoding
+Set-Cookie: sails.sid=s%3ArBlB4038w6wpbrwaHwAQLo3LEJeNXzmM.wMtXeHMLCeOaeYnKA1QQerz%2Fb06THWrERy6%2F4pme5Dk; Path=/; HttpOnly
+Set-Cookie: __cf_bm=0NwqJbgyMxhoeTu_3q_MSlitu0tfI8Dn0SP.tPDprrY-1763158088-1.0.1.1-380g8VAqr8b6MwqmFSQa27bF0wQEoy4EcPG_0ZGdwQe3hvAvOXqrk8cvBbcNt5Fft0waUOyzgdOqjjyJPSg_zG5cUWB0ocAEYTNcxmeNUok; path=/; expires=Fri, 14-Nov-25 22:38:08 GMT; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+Set-Cookie: _cfuvid=MFSQbeAMc0cmeZuaVL8pJJU1dc05Su6CJ0G4HvSvndc-1763158088344-0.0.1.1-604800000; path=/; domain=.postman-echo.com; HttpOnly; Secure; SameSite=None
+x-envoy-upstream-service-time: 5
+cf-cache-status: DYNAMIC
+Server: cloudflare
+CF-RAY: 99e9d3635d1d7782-TUN
+
+{
+    "args": {
+        
+    },
+    "headers": {
+        "host": "postman-echo.com",
+        "accept-encoding": "gzip, br",
+        "user-agent": "Apache-HttpClient/4.5.13 (Java/17.0.12)",
+        "x-forwarded-proto": "https",
+        "accept": "*/*"
+    },
+    "url": "https://postman-echo.com/get"
+}
