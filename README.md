@@ -47,7 +47,7 @@ Pour écrire des tests lisibles, maintenables et robustes, avec un minimum de co
 
 ---
 
-##📥 Installation
+📥 Installation
 
 1. Clonez le projet :  
 <pre>
