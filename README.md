@@ -17,6 +17,7 @@ Ce projet est un **framework d'automatisation pour les tests d'API REST** utilis
 - Intéger les test dans une pipeline CI/CD
 
 🔹Qu'est ce que Rest Assured ? 
+
 Rest Assured est une bibliothéque Java open-source pour automatiser les tests d'API REST.
 
 Elle permet de :
@@ -58,7 +59,7 @@ git clone https://github.com/votre-utilisateur/restassured-api-automation.git
 mvn clean install
 </pre>
 ---
-##▶️ Exécution des tests
+▶️ Exécution des tests
 
 h3. Depuis Maven
 <pre>
@@ -70,7 +71,7 @@ h3. Depuis IntelliJ IDEA
 2. Clic droit → Run Test
 ---
 
-##🔧 Configuration Commune
+🔧 Configuration Commune
 
 <pre>
 RequestSpecBuilder requestSpecBuilder = new RequestSpecBuilder()
@@ -88,7 +89,7 @@ ResponseSpecBuilder responseSpecBuilder = new ResponseSpecBuilder()
 </pre>
 -----
 
-##🧪 Exemples de tests
+🧪 Exemples de tests
 
 ✅Test GET – Liste des workspaces
 <pre>
@@ -137,8 +138,7 @@ String response = given()
 System.out.println("Workspace Name = " + JsonPath.from(response).getString("workspaces[0].name"));
 </pre>
 ---
-
-## 📊 Rapports
+ 📊 Rapports
 
 Les tests JUnit ou TestNG génèrent automatiquement des rapports HTML :  
 <pre>
@@ -152,7 +152,7 @@ Ces rapports contiennent :
 * Logs détaillés Rest Assured
   
 ---
-##🤝 Contribution
+🤝 Contribution
 
 1. Forkez le repository  
 2. Créez votre branche :  
@@ -172,7 +172,7 @@ git push origin feature/nouvelle-feature
    
  ------
 
-##👩‍💻 Auteur
+👩‍💻 Auteur
 Rahma Louati |Software QA Engineer – Test manuel & automatisé|
 
 
