@@ -61,12 +61,12 @@ mvn clean install
 ---
 ▶️ Exécution des tests
 
-h3. Depuis Maven
+Depuis Maven
 <pre>
 mvn test
 </pre>
 
-h3. Depuis IntelliJ IDEA
+Depuis IntelliJ IDEA
 1. Ouvrez le fichier AutomateGet.java ou AutomateDelete.java  
 2. Clic droit → Run Test
 ---
@@ -170,7 +170,6 @@ git push origin feature/nouvelle-feature
 5. Ouvrez une Pull Request
 
  ------
-##👩‍💻 Auteur Rahma Louati |Software QA Engineer – Test manuel & automatisé|
+👩‍💻 Auteur Rahma Louati |Software QA Engineer – Test manuel & automatisé|
 
-👩‍💻 Auteur
-Rahma Louati |Software QA Engineer – Test manuel & automatisé|
+
