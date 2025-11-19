@@ -169,13 +169,8 @@ git push origin feature/nouvelle-feature
 </pre>
 5. Ouvrez une Pull Request
 
-   
  ------
+##👩‍💻 Auteur Rahma Louati |Software QA Engineer – Test manuel & automatisé|
 
 👩‍💻 Auteur
 Rahma Louati |Software QA Engineer – Test manuel & automatisé|
-
-
-
-
-Ouvrez une Pull Request
